@@ -1,0 +1,117 @@
+    <section class="contact-header">
+      <div class="container">
+        <h1>¡Trabajemos Juntos!</h1>
+        <p>¿Tenes un proyecto en mente? Contanos sobre él y te ayudaremos a hacerlo realidad</p>
+      </div>
+    </section>
+
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-form-section">
+            <h2>Envíanos un mensaje</h2>
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre *</label>
+                  <input id="nombre" name="nombre" type="text" required />
+                </div>
+                <div class="form-group">
+                  <label for="empresa">Empresa</label>
+                  <input id="empresa" name="empresa" type="text" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+                  <input id="telefono" name="telefono" type="tel" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="servicio">Tipo de proyecto</label>
+                <select id="servicio" name="servicio">
+                  <option value="">Selecciona una opción</option>
+                  <option value="desarrollo">Desarrollo web completo</option>
+                  <option value="diseno">Diseño UI/UX + Desarrollo</option>
+                  <option value="optimizacion">Optimización web</option>
+                  <option value="mantenimiento">Mantenimiento web</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="presupuesto">Presupuesto estimado</label>
+                <select id="presupuesto" name="presupuesto">
+                  <option value="">Selecciona un rango</option>
+                  <option value="500-1000">$500 - $1,000 USD</option>
+                  <option value="1000-2500">$1,000 - $2,500 USD</option>
+                  <option value="2500-5000">$2,500 - $5,000 USD</option>
+                  <option value="5000+">$5,000+ USD</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Cuéntanos sobre tu proyecto *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required
+                  placeholder="Describe tu proyecto, objetivos, plazos y cualquier detalle relevante..."></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                Enviar mensaje
+                <span class="btn-icon">→</span>
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-info-section">
+            <div class="contact-info">
+              <h3>Información de contacto</h3>
+              <div class="info-item">
+                <div class="info-icon">📧</div>
+                <div>
+                  <strong>Email</strong>
+                  <p>hola{{'@'}}webear.com</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📱</div>
+                <div>
+                  <strong>Teléfono</strong>
+                  <p>+54 9 11 1234-5678</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🌍</div>
+                <div>
+                  <strong>Ubicación</strong>
+                  <p>Córdoba, Argentina</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">⏰</div>
+                <div>
+                  <strong>Horario</strong>
+                  <p>Lun - Vie: 9:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="social-links">
+              <h4>Seguinos!</h4>
+              <div class="social-buttons">
+                <a href="#" class="social-btn linkedin">Instagram</a>
+                <a href="#" class="social-btn github">Facebook</a>
+                <a href="#" class="social-btn behance">Behance</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
