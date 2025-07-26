@@ -22,10 +22,14 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/index.html",
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/app/images",
+                "output": "/assets/images"
               }
             ],
             "styles": [
