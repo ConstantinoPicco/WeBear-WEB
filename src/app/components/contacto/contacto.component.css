@@ -179,6 +179,14 @@
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #f1f1f1;
+  justify-content: flex-start;
+}
+
+.info-item > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .info-item:last-child {
@@ -199,6 +207,7 @@
   margin-bottom: 0.2rem;
   font-weight: 600;
   letter-spacing: 0.01em;
+  margin-left: 0px;
 }
 
 .info-item p {
@@ -241,13 +250,14 @@
   letter-spacing: 0.01em;
 }
 
-.social-btn.linkedin {
-  background: #0077b5;
-  color: white;
+.social-btn.instagram {
+  background: linear-gradient(45deg, #f58529 0%, #dd2a7b 50%, #8134af 100%);
+  color: #000000;
+  border: none;
 }
 
-.social-btn.github {
-  background: #333;
+.social-btn.facebook {
+  background:  #1877F2;
   color: white;
 }
 

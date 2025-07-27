@@ -10,32 +10,32 @@
         <div class="contact-grid">
           <div class="contact-form-section">
             <h2>Envíanos un mensaje</h2>
-            <form class="contact-form">
+            <form #contactForm="ngForm" (ngSubmit)="sendEmail($event)" class="contact-form">
               <div class="form-row">
                 <div class="form-group">
                   <label for="nombre">Nombre *</label>
-                  <input id="nombre" name="nombre" type="text" required />
+                  <input id="nombre" name="nombre" type="text" [(ngModel)]="formData.nombre" required />
                 </div>
                 <div class="form-group">
                   <label for="empresa">Empresa</label>
-                  <input id="empresa" name="empresa" type="text" />
+                  <input id="empresa" name="empresa" type="text" [(ngModel)]="formData.empresa" />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
                   <label for="email">Email *</label>
-                  <input id="email" name="email" type="email" required />
+                  <input id="email" name="email" type="email" [(ngModel)]="formData.email" required />
                 </div>
                 <div class="form-group">
                   <label for="telefono">Teléfono</label>
-                  <input id="telefono" name="telefono" type="tel" />
+                  <input id="telefono" name="telefono" type="tel" [(ngModel)]="formData.telefono" />
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="servicio">Tipo de proyecto</label>
-                <select id="servicio" name="servicio">
+                <select id="servicio" name="servicio" [(ngModel)]="formData.servicio">
                   <option value="">Selecciona una opción</option>
                   <option value="desarrollo">Desarrollo web completo</option>
                   <option value="diseno">Diseño UI/UX + Desarrollo</option>
@@ -47,7 +47,7 @@
 
               <div class="form-group">
                 <label for="presupuesto">Presupuesto estimado</label>
-                <select id="presupuesto" name="presupuesto">
+                <select id="presupuesto" name="presupuesto" [(ngModel)]="formData.presupuesto">
                   <option value="">Selecciona un rango</option>
                   <option value="500-1000">$500 - $1,000 USD</option>
                   <option value="1000-2500">$1,000 - $2,500 USD</option>
@@ -58,7 +58,7 @@
 
               <div class="form-group">
                 <label for="mensaje">Cuéntanos sobre tu proyecto *</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required
+                <textarea id="mensaje" name="mensaje" [(ngModel)]="formData.mensaje" required
                   placeholder="Describe tu proyecto, objetivos, plazos y cualquier detalle relevante..."></textarea>
               </div>
 
@@ -73,42 +73,34 @@
             <div class="contact-info">
               <h3>Información de contacto</h3>
               <div class="info-item">
-                <div class="info-icon">📧</div>
+                <div class="info-icon"></div>
                 <div>
                   <strong>Email</strong>
-                  <p>hola{{'@'}}webear.com</p>
+                  <p>webeararg{{'@'}}gmail.com</p>
                 </div>
               </div>
               <div class="info-item">
-                <div class="info-icon">📱</div>
+                <div class="info-icon"></div>
                 <div>
                   <strong>Teléfono</strong>
-                  <p>+54 9 11 1234-5678</p>
+                  <p>+54 9 351 573-7365</p>
                 </div>
               </div>
               <div class="info-item">
-                <div class="info-icon">🌍</div>
+                <div class="info-icon"></div>
                 <div>
                   <strong>Ubicación</strong>
                   <p>Córdoba, Argentina</p>
                 </div>
-              </div>
-              <div class="info-item">
-                <div class="info-icon">⏰</div>
-                <div>
-                  <strong>Horario</strong>
-                  <p>Lun - Vie: 9:00 - 18:00</p>
                 </div>
-              </div>
             </div>
 
 
             <div class="social-links">
               <h4>Seguinos!</h4>
               <div class="social-buttons">
-                <a href="#" class="social-btn linkedin">Instagram</a>
-                <a href="#" class="social-btn github">Facebook</a>
-                <a href="#" class="social-btn behance">Behance</a>
+                <a href="https://www.instagram.com/webear.com.ar/" class="social-btn instagram">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100065463640418" class="social-btn facebook">Facebook</a>
               </div>
             </div>
           </div>
